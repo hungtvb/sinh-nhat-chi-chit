@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Happy Birthday — Chị Chít · 26.10</title>
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<div id="stage">
+  <canvas id="gl"></canvas>
+  <div id="flash"></div>
+
+  <div id="letter">
+    <p class="letter-kicker">Gửi Chị Chít</p>
+    <p class="letter-body">Hôm nay là ngày của chị — ngày mà cả nhà có thêm một người để thương.<br><br>Chúc chị tuổi mới thật khỏe, thật vui, lúc nào cũng rực rỡ như chính chị, và mọi điều ước trong đêm nay đều thành thật.</p>
+    <p class="letter-sign">— Mừng sinh nhật chị · 26.10</p>
+    <button id="replay" type="button">Xem lại từ đầu</button>
+  </div>
+
+  <button id="mute" class="hidden" type="button" aria-label="Bật hoặc tắt nhạc">
+    <svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="#ff9ec4"/><path class="wv" d="M16 9.5a4 4 0 0 1 0 5M18.2 7.2a7.2 7.2 0 0 1 0 9.6" stroke="#ff9ec4" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg>
+  </button>
+
+  <audio id="music" src="assets/audio/happy-birthday-piano.mp3" loop preload="auto"></audio>
+</div>
+<script src="vendor/three-r128.min.js"></script>
+<script src="vendor/three-bloom-r128.js"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
